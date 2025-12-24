@@ -1,0 +1,20 @@
+# - UML (Use case)
+@startuml
+left to right direction
+
+actor "Администратор" as Admin
+actor "Сотрудник" as Employee
+
+rectangle "Система управления проектами" {
+  Admin -- (Управление пользователями)
+  Admin -- (Создание проекта)
+  Admin -- (Редактирование проекта)
+  Admin -- (Удаление проекта)
+  Admin -- (Назначение сотрудников)
+
+  Employee -- (Просмотр проектов)
+  Employee -- (Обновление статуса задач)
+  Employee -- (Просмотр задач)
+}
+
+@enduml
